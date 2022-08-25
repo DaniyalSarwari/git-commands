@@ -8,7 +8,7 @@ Git is a distributed Version Control System  VCS tool used to versioning, collab
  - git init // This command initialize folder as a git repository
  - git status // check current status including in which branch currently the HEAD pointing to and the information of changes to be staged
  - git add . // start tracking changes in all the files (add to staging area)
- - git commit -m *message* // commit to local repository
+ - git commit -m "*message*" // commit to local repository
  - git reset //reset from staged to unstage
  - git reset --hard // reset from staged to unstaged also remove modifications
  - git log // check the history of commits
