@@ -12,10 +12,10 @@ Git is a distributed Version Control System  VCS tool used to versioning, collab
  - `git commit -m "[message]"`          // commit to local repository
  - `git push`                           // push changes to the remote repository
  - `git pull`                           // pull change from the remote repository
- - `git reset`                          //reset from staged to unstage
+ - `git reset`                          // reset from staged to unstage
  - `git reset --hard`                   // reset from staged to unstaged also remove modifications
  - `git log`                            // check the history of commits
- - `git log [branch-name-1..branch-name-2]` //display difference of commits (commits that are in "branch-name-2" but not in "branch-name-1")
+ - `git log [branch-name-1..branch-name-2]` //display difference of commits *(commits that are in "branch-name-2" but not in "branch-name-1")*
 
 ## Commands for branches
 
@@ -24,7 +24,7 @@ Git is a distributed Version Control System  VCS tool used to versioning, collab
 - `git branch [branch-name]`            //create new branch 
 - `git checkout [branch-name]`          //switch branch
 - `git branch --delete [branch-name]`   //delete branch
-- `git merge [branch-name]`             //merge changes of (branch-name) into the working/active branch
+- `git merge [branch-name]`             //merge changes of **(branch-name)** into the working/active branch
 
 ## Additional Commands
 
@@ -33,7 +33,7 @@ Git is a distributed Version Control System  VCS tool used to versioning, collab
 - `git config --global user.email "[email]"`   //setup email
 - `git config --global user.email`             //display the setuped username
 
-## About conflict in git
+## Conflict in git
 
 conflict happens when you try to merge two branches and changes occur at same file on the same line.
 To resolve conflict you must review it to keep both changes or changes of any specific branch, the easy way to the change through UI tool.
@@ -44,6 +44,6 @@ To save changes temporarily if you don't want to commit.
 
 - `git stash` OR `git stash save [provide-name]` // save changes to clipboard
 - `git stash list`                               // show list of available stash
-- `git stash apply [stash-name]`                 // apply the stash and keep that in the stash list *e.g git stash apply stash@{0}* **(here stash-name is not the name that you suggest to save)**
+- `git stash apply [stash-name]`                 // apply the stash and keep that in the stash list **e.g git stash apply stash@{0}** *(here stash-name is not the name that you suggest to save)*
 - `git stash clear`                              // clear all the stashes
-- `git stash pop`                                // pop the last stash from list (also remove from stash list)
+- `git stash pop`                                // pop the last stash from list *(also remove from stash list)*
