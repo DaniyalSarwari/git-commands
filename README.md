@@ -37,3 +37,7 @@ Git is a distributed Version Control System  VCS tool used to versioning, collab
 
 conflict happens when you try to merge two branches and changes occur at same file on the same line.
 To resolve conflict you must review it to keep both changes or changes of any specific branch, the easy way to the change through UI tool.
+
+## Stash in git
+
+To save changes temporarily if you don't want to commit.
