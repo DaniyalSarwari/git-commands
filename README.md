@@ -17,7 +17,9 @@ Git is a distributed Version Control System  VCS tool used to versioning, collab
  - `git log`                            // check the history of commits
  - `git log [branch-name-1..branch-name-2]` //display difference of commits *(commits that are in "branch-name-2" but not in "branch-name-1")*
 
-## Commands for branches
+## Branches in git
+
+To work in a same repository but in different context/module/features in a team or even individually then creating branches are helpful. Each git repository contains at least the one branch master/main. 
 
 - `git branch` OR `git branch --list`   // display a list of branches
 - `git branch -v`                       // display a list of branches with additional detail
