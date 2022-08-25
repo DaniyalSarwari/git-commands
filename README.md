@@ -25,5 +25,5 @@ Git is a distributed Version Control System  VCS tool used to versioning, collab
 
 - `git config --global user.name "*username*"` // setup username
 - `git config --global user.name`              // display the setuped username
-- `git config --global user.email "*email*"`   //setup email
+- `git config --global user.email "`*email*`"`   //setup email
 - `git config --global user.email`             //display the setuped username
