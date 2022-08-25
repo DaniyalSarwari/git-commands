@@ -16,10 +16,11 @@ Git is a distributed Version Control System  VCS tool used to versioning, collab
 
 ## Commands for branches
 
-- `git branch`                          // display a list of branches
+- `git branch` OR `git branch --list`   // display a list of branches
 - `git branch -v`                       // display a list of branches with additional detail
 - `git branch [branch-name]`            //create new branch 
 - `git branch --delete [branch-name]`   //delete branch
+- `git merge [branch-name]`             //this will merge the changes of (branch-name) into the working branch
 
 ## Additional Commands
 
