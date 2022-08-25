@@ -12,12 +12,17 @@ Git is a distributed Version Control System  VCS tool used to versioning, collab
  - `git reset`                          // reset from staged to unstage
  - `git reset --hard`                   // reset from staged to unstaged also remove modifications
  - `git commit -m "[message]"`          // commit to local repository
- - `git push`                           // push changes to the remote repository
+ - `git push`                           // push changes to the upstream remote repository (best practice is to use local repo name and branch name **e.g git push origin main**)
  - `git fetch`                          // fetch the changes from remote repository but not merge with local repository.
  - `git merge`                          // merge the fetched changes *(from command **git fetch**)* to local 
 repository.
- - `git pull`                           // fetch and merge the changes from the remote to local repository
-
+ - `git pull`                           // fetch and merge the changes from the upstream remote to local repository (best practice is to use local repo name and branch name **e.g git pull origin main**)
+ - `git branch -M [branch-name]`        // change active/working branch name **e.g git branch -M main**
+ - `git remote add [set-repo-name] [url]`   // connect local repo to remote repo **e.g git remote add origin (link)**
+ - `git remote -v`                      // show the remotely connected repo url to local repo
+ - `git push -u [repo-name] [branch-name]` // push all local commits to specific branch of remote repo *(here -u flag create upstream so that to use only git push command without mentioning repo/branch name worth noting that here (repo-name) is not the actual name of remote repo)*
+ - `git remote show`                    // display the locel name of connected repo
+ - `git remote show [repo-name]`        // show the status of remote repo **e.g git remote show origin**
 
 ## Branches in git
 
@@ -39,10 +44,11 @@ In Long live branches *e.g production, development, testing etc* these branches 
 
 - `git config --global user.name "[username]"` // setup username
 - `git config --global user.name`              // display the setuped username
-- `git config --global user.email "[email]"`   //setup email
-- `git config --global user.email`             //display the setuped username
-- `git log`                            // check the history of commits
-- `git log [branch-name-1..branch-name-2]` //display difference of commits *(commits that are in "branch-name-2" but not in "branch-name-1")*
+- `git config --global user.email "[email]"`   // setup email
+- `git config --global user.email`             // display the setuped username
+- `git log`                                    // check the history of commits
+- `git log [branch-name-1..branch-name-2]`     // display difference of commits *(commits that are in "branch-name-2" but not in "branch-name-1")*
+- `git log [repo-name]/[branch-name]`          // display commit history of specific branch of remote repo
 
 ## Conflict in git
 
