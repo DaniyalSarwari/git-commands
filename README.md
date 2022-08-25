@@ -65,3 +65,11 @@ To save changes temporarily if you don't want to commit.
 - `git stash clear`                              // clear all the stashes
 - `git stash pop`                                // pop the last stash from list *(also remove from stash list)*
 - `git stash drop [stash-name]`                  // drop and remove the stash **(e.g git stash drop stash@{0})**
+
+## .gitignore
+
+Those files and folder that you might want git don't see; create file with extension **.gitignore** and write it in that file. Example below is an specifying of ignoring some files and folder
+
+ - /folder-name/
+ - *.txt 
+ - *.mp4
