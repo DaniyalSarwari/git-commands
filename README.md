@@ -41,3 +41,9 @@ To resolve conflict you must review it to keep both changes or changes of any sp
 ## Stash in git
 
 To save changes temporarily if you don't want to commit.
+
+- `git stash` OR `git stash save [provide-name]` // save changes to clipboard
+- `git stash list`                               // show list of available stash
+- `git stash apply [stash-name]`                 // apply the stash and keep that in the stash list *e.g git stash apply stash@{0}* **(here stash-name is not the name that you suggest to save)**
+- `git stash clear`                              // clear all the stashes
+- `git stash pop`                                // pop the last stash from list (also remove from stash list)
