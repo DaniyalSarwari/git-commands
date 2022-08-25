@@ -8,6 +8,7 @@ Git is a distributed Version Control System  VCS tool used to versioning, collab
  - `git init`                           // This command initialize folder as a git repository
  - `git status`                         // check current status including in which branch currently the HEAD pointing to and the information of changes to be staged
  - `git add .`                          // start tracking changes in all the files (add to staging area)
+ - `git add [filename]`                 // only add specific file to staging area
  - `git commit -m "[message]"`          // commit to local repository
  - `git push`                           // push changes to the remote repository
  - `git pull`                           // pull change from the remote repository
@@ -21,8 +22,9 @@ Git is a distributed Version Control System  VCS tool used to versioning, collab
 - `git branch` OR `git branch --list`   // display a list of branches
 - `git branch -v`                       // display a list of branches with additional detail
 - `git branch [branch-name]`            //create new branch 
+- `git checkout [branch-name]`          //switch branch
 - `git branch --delete [branch-name]`   //delete branch
-- `git merge [branch-name]`             //this will merge the changes of (branch-name) into the working branch
+- `git merge [branch-name]`             //merge changes of (branch-name) into the working/active branch
 
 ## Additional Commands
 
