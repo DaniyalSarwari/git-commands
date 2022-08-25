@@ -28,6 +28,11 @@ To work in a same repository but in different context/module/features in a team 
 - `git branch --delete [branch-name]`   //delete branch
 - `git merge [branch-name]`             //merge changes of **(branch-name)** into the working/active branch
 
+#### Short live / Long live Branches
+
+In short live branches where we need to work on a small task of specific feature where we complete task merge into other branch and remove that branch.
+In Long live branches *e.g production, development, testing etc* these branches use in lon run. 
+
 ## Additional Commands
 
 - `git config --global user.name "[username]"` // setup username
