@@ -11,7 +11,7 @@ Git is a distributed Version Control System  VCS tool used to versioning, collab
  - `git add [filename]`                 // only add specific file to staging area
  - `git reset`                          // reset from staged to unstage
  - `git reset --hard`                   // reset from staged to unstaged also remove modifications from all files
- - `git checkout HEAD [filename]`       // remove modifications of specific file from staging area
+ - `git checkout HEAD [filename]`       // remove modifications of specific file
  - `git commit -m "[message]"`          // commit to local repository
  - `git push`                           // push changes to the upstream remote repository (best practice is to use local repo name and branch name **e.g git push origin main**)
  - `git fetch`                          // fetch the changes from remote repository but not merge with local repository.
