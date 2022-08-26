@@ -25,6 +25,10 @@ repository.
  - `git remote show`                    // display the locel name of connected repo
  - `git remote show [repo-name]`        // show the status of remote repo **e.g git remote show origin**
 
+### To undo/revert commits
+
+ - `git reset --hard [commit-hash]`     // to roll back upto specified commit hash
+
 ## Branches in git
 
 To work in a same repository but in different context/module/features in a team or even individually then creating branches are helpful. Each git repository contains at least the one branch master/main. 
