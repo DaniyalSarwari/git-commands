@@ -73,6 +73,15 @@ To save changes temporarily if you don't want to commit.
 - `git stash pop`                                // pop the last stash from list *(also remove from stash list)*
 - `git stash drop [stash-name]`                  // drop and remove the stash **(e.g git stash drop stash@{0})**
 
+## Forking in github
+
+Remember forking is a feature of Github. It clone/copy the repository into your online github account, from there you can clone into your local repostiory; do changes and can push the changes into the copy of your git hub repository and from there you can create **pull request** for the owner to merge the changes into the origional repository *(now it is upto the owner of the repository to merge the changes or not into the original)*
+
+> Your github forked copy could be behind from owners copy for that you can connect with owner copy as well to pull the changes from CLI. *(one way is that you can sync fork from github and then pull that changes into your local repo)*
+
+- `git remote add upstream [owners-copy-link]` // ('upstream' is a conventional name working with forked remote repos and 'origin' of your remote repos)
+- `git pull upstream [branch-name]`
+
 ## .gitignore
 
 Those files and folder that you might want git don't see; create file with extension **.gitignore** and write it in that file. Example below is an specifying of ignoring some files and folder
