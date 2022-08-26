@@ -32,7 +32,9 @@ To work in a same repository but in different context/module/features in a team 
 - `git branch -v`                       // display a list of branches with additional detail
 - `git branch [branch-name]`            //create new branch 
 - `git checkout [branch-name]`          //switch branch
-- `git branch --delete [branch-name]`   //delete branch
+- `git branch --delete [branch-name]`   //delete local branch (--delete OR -d)
+- `git branch -dr [repo-name]/[branch-name]`        //delete locally available remote branch (**e.g git branch -dr origin/test**)
+- `git push origin --delete [branch-name]`   //delete remote branch (remember **origin** is a local repo-name)
 - `git merge [branch-name]`             //merge changes of **(branch-name)** into the working/active branch
 
 #### Short live / Long live Branches
