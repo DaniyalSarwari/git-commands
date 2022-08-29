@@ -12,7 +12,7 @@ Git is a distributed Version Control System  VCS tool used to versioning, collab
  - `git reset`                          //reset from staged to unstage
  - `git reset --hard`                   // reset from staged to unstaged also remove modifications
  - `git log`                            // check the history of commits
- - `git log [branch-name..branch-name]` //display difference of commits (from..to)
+ - `git log [branch-name-1..branch-name-2]` //display difference of commits (commits that are in "branch-name-2" but not in "branch-name-1")
 
 ## Commands for branches
 
