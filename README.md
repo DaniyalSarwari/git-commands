@@ -55,10 +55,21 @@ A type of merge of two branches where one branch commits history ahead of second
 
 In this case both branches have it's own addtional commits. Here difference of additional commit is created in the active branch of type merge and can be seen in the history/log.
 
+### Rebase
+
+Rebase is a branch merge case in which we don't want to see the splitting of commit that merge from another branch. What it does it actually streamline commits _(single straight line)_ in a way that the difference commits merging from other branch to the active branch are the commits of an active branch. While merge (through merge command) give split history to show at which branch is splitted and merged at which point.
+
+- `git rebase [branch-name]`
+
+>**Step 1.** Rebase save the active branch commits saved away at a side
+>**Step 2.** Add the commits (difference commits) of second branch to the active branch first in a single line
+>**Step 3.** After that applying the active branch commits (that are saved away at a side) in a line with new commit (but change affect are the same). and this commit is not the previous one.
+>_This will give the affect even after merging that all the commits done on active branch_
+
 #### Short live / Long live Branches
 
 In short live branches where we need to work on a small task of specific feature where we complete task merge into other branch and remove that branch.
-In Long live branches *e.g production, development, testing etc* these branches use in lon run. 
+In Long live branches *e.g production, development, testing etc* these branches use in long run. 
 
 ## Additional Commands
 
