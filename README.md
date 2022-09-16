@@ -9,9 +9,10 @@ Git is a distributed Version Control System  VCS tool used to versioning, collab
  - `git status`                         // check current status including in which branch currently the HEAD pointing to and the information of changes to be staged
  - `git add .`                          // start tracking changes in all the files (add to staging area)
  - `git add [filename]`                 // only add specific file to staging area
- - `git reset`                          // reset from staged to unstage
+ - `git reset`                          // only reset from staged to unstage all files
+ - `git reset [filename]`               // only reset specific file but not remove modifications of file
  - `git reset --hard`                   // reset from staged to unstaged also remove modifications from all files
- - `git checkout HEAD [filename]`       // remove modifications of specific file
+ - `git checkout HEAD [filename]`       // remove modifications of specific file before commit in stage/unstage
  - `git commit -m "[message]"`          // commit to local repository
  - `git push`                           // push changes to the upstream remote repository (best practice is to use local repo name and branch name **e.g git push origin main**)
  - `git fetch`                          // fetch the changes from remote repository but not merge with local repository.
@@ -27,7 +28,8 @@ repository.
 
 ### To undo/revert commits
 
- - `git reset --hard [commit-hash]`     // to roll back upto specified commit hash
+ - `git reset --hard [commit-hash]`     // to roll back upto specified commit hash (commit includes changes accross multiple files will be roll backed from commit history/log)
+ - `git revert [commit-hash]`           // it will only remove the applied changes/affect by a specific commit *(it actually add another commit to revert changes and that commit is a part of history/log)*
 
 ## Branches in git
 
