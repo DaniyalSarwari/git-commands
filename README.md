@@ -28,8 +28,9 @@ repository.
 
 ### To undo/revert commits
 
- - `git reset --hard [commit-hash]`     // to roll back upto specified commit hash (commit includes changes accross multiple files will be roll backed from commit history/log)
+ - `git reset --hard [commit-hash]`     // to roll back upto specified commit hash to local repo(commit includes changes accross multiple files will be roll backed from commit history/log)
  - `git revert [commit-hash]`           // it will only remove the applied changes/affect by a specific commit *(it actually add another commit to revert changes and that commit is a part of history/log)*
+ - `git push -f origin main`            // rolled back commit from remote rep ( affect of rolled back only available to local relo, you need to run this command to roll back commit from remote repo too)
 
 ## Branches in git
 
