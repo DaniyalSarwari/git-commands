@@ -18,7 +18,11 @@ Git is a distributed Version Control System  VCS tool used to versioning, collab
  - `git fetch`                          // fetch the changes from remote repository but not merge with local repository.
  - `git merge`                          // merge the fetched changes *(from command **git fetch**)* to local 
 repository.
- - `git pull`                           // fetch and merge the changes from the upstream remote to local repository (best practice is to use local repo name and branch name **e.g git pull origin main**) (to pull another branch present in remote but not in local then use this **git pull origin (remote-branch-name)** and checkout into it)
+ - `git pull`                           // fetch and merge the changes from the upstream remote to local repository (best practice is to use local repo name and branch name **e.g git pull origin main**) 
+ > To pull another branch present in remote but not in local then use these two method:
+ > 1. **git pull origin (remote-branch-name)** and checkout into it   // it will merge ahead commits to active branch (if any)
+ > 2. **git fetch origin (remote-branch-name)** and checkout into it
+
  - `git branch -M [branch-name]`        // change active/working branch name **e.g git branch -M main**
  - `git remote add [set-repo-name] [url]`   // connect local repo to remote repo **e.g git remote add origin (link)**
  - `git remote -v`                      // show the remotely connected repo url to local repo
