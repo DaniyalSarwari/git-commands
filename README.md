@@ -47,8 +47,13 @@ To work in a same repository but in different context/module/features in a team 
 - `git merge [branch-name]`             //merge changes of **(branch-name)** into the working/active branch
 
 ### Fast-Forward Merge
-A type of merge of two branches where one branch commits history ahead of second branch and second branch don't have its own commits.
+
+A type of merge of two branches where one branch commits history ahead of second branch and second branch don't have its own commits. **In this case NO additional commit is generated.**
 >_For Example_ we created 'dev' branch from 'main', at this point 'dev' branch contains all the 'main' branch commits, now let we add additional commits in 'dev' branch only, by this 'dev' branch is ahead of 'main' and let say 'main' don't have its own additional commit. NOW if we merge 'dev' commits to 'main' it is consider as Fast-Forwarded Merge.
+
+### Merge-Commit
+
+In this case both branches have it's own addtional commits. Here difference of additional commit is created in the active branch of type merge and can be seen in the history/log.
 
 #### Short live / Long live Branches
 
