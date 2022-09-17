@@ -61,10 +61,11 @@ Rebase is a branch merge case in which we don't want to see the splitting of com
 
 - `git rebase [branch-name]`
 
-**Steps given below**
+**Rebase works in a steps given below**
 > 1. First rebase save the active branch commits saved away at a side.
 > 2. Secondly add the commits (difference commits) of second branch to the active branch first in a single line.
 > 3. Finally after that applying the active branch commits (that are saved away at a side) in a line with new commit (but change affect are the same). and this commit hash is different from previous ones.
+
 > _This will give the affect even after merging that all the commits done on active branch_
 
 ### Short live / Long live Branches
