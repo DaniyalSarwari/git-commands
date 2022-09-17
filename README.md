@@ -83,6 +83,8 @@ In Long live branches *e.g production, development, testing etc* these branches 
     * feature/rss-feed
     * hotfix/missing-link
 
+> For example one of the team member working in a specific feature branch; after finishing his/her work, team member create pull request to review code by team lead/manager to merge in development branch. Once the team lead satisfy with the code then he/she can merge in development branch. **This is git-flow**
+
 ## Additional Commands
 
 - `git config --global user.name "[username]"` // setup username
