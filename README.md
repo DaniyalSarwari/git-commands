@@ -1,7 +1,7 @@
 
 ## Short introduction
 
-Git is a distributed Version Control System  VCS tool used to versioning, collaboration of a project
+: Git is a distributed Version Control System  VCS tool used to versioning, collaboration of a project
 
 ## Some usefull git commands
 
@@ -61,15 +61,26 @@ Rebase is a branch merge case in which we don't want to see the splitting of com
 
 - `git rebase [branch-name]`
 
->**Step 1.** Rebase save the active branch commits saved away at a side
->**Step 2.** Add the commits (difference commits) of second branch to the active branch first in a single line
->**Step 3.** After that applying the active branch commits (that are saved away at a side) in a line with new commit (but change affect are the same). and this commit hash is different from previous ones.
->_This will give the affect even after merging that all the commits done on active branch_
+**Steps given below**
+> 1. First rebase save the active branch commits saved away at a side
+ 2. Secondly add the commits (difference commits) of second branch to the active branch first in a single line
+ 3. Finally after that applying the active branch commits (that are saved away at a side) in a line with new commit (but change affect are the same). and this commit hash is different from previous ones.
+_This will give the affect even after merging that all the commits done on active branch_
 
-#### Short live / Long live Branches
+### Short live / Long live Branches
 
 In short live branches where we need to work on a small task of specific feature where we complete task merge into other branch and remove that branch.
 In Long live branches *e.g production, development, testing etc* these branches use in long run. 
+
+### Git Workflows
+
+> * It is a feature of Github not git. 
+> * It set the standards _(rules/regulation)_ for development, communication, code review/management when working in a team.
+> * Each branch serve it's own purpose. _(Branch examples below)_
+> > > master
+> > > development
+> > > feature/rss-feed
+> > > hotfix/missing-link
 
 ## Additional Commands
 
