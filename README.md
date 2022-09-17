@@ -75,13 +75,13 @@ In Long live branches *e.g production, development, testing etc* these branches 
 
 ### Git Workflows
 
-> * It is a feature of Github not git. 
-> * It set the standards _(rules/regulation)_ for development, communication, code review/management when working in a team.
-> * Each branch serve it's own purpose. _(Branch examples below)_
-> > > master
-> > > development
-> > > feature/rss-feed
-> > > hotfix/missing-link
+* It is a feature of Github not git. 
+* It set the standards _(rules/regulation)_ for development, communication, code review/management when working in a team.
+* Each branch serve it's own purpose. _(Branch examples below)_
+    * master
+    * development
+    * feature/rss-feed
+    * hotfix/missing-link
 
 ## Additional Commands
 
