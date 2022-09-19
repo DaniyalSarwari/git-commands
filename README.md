@@ -19,9 +19,10 @@ Git is a distributed Version Control System  VCS tool used to versioning, collab
  - `git merge`                          // merge the fetched changes *(from command **git fetch**)* to local 
 repository.
  - `git pull`                           // fetch and merge the changes from the upstream remote to local repository (best practice is to use local repo name and branch name **e.g git pull origin main**) 
- > To pull another branch present in remote but not in local then use these two method:
+ > To pull another branch present in remote but not in local then use one of these methods:
  > 1. **git pull origin (remote-branch-name)** and checkout into it   // it will merge ahead commits to active branch (if any)
  > 2. **git fetch origin (remote-branch-name)** and checkout into it
+ > 3. **git switch -c (branch-name) origin/(branch-name)**  //it will create and switched to new branch available at remote(BUT before running this command you need to run _git pull_ command first at any other active branch) 
 
  - `git branch -M [branch-name]`        // change active/working branch name **e.g git branch -M main**
  - `git remote add [set-repo-name] [url]`   // connect local repo to remote repo **e.g git remote add origin (link)**
@@ -34,7 +35,7 @@ repository.
 
  - `git reset --hard [commit-hash]`     // to roll back upto specified commit hash to local repo(commit includes changes accross multiple files will be roll backed from commit history/log)
  - `git revert [commit-hash]`           // it will only remove the applied changes/affect by a specific commit *(it actually add another commit to revert changes and that commit is a part of history/log)*
- - `git push -f origin main`            // rolled back commit from remote rep ( affect of rolled back only available to local relo, you need to run this command to roll back commit from remote repo too)
+ - `git push -f origin main`            // rolled back commits from remote repo ( affect of rolled back only available to local repo, you need to run this command to roll back commits from remote repo too)
 
 ## Branches in git
 
