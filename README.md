@@ -43,6 +43,8 @@ To work in a same repository but in different context/module/features in a team 
 
 - `git branch` OR `git branch --list`   // display a list of branches
 - `git branch -v`                       // display a list of branches with additional detail
+- `git branch -a`                       // display all local and remote branches.
+- `git branch -r`                       // display all remote branches
 - `git branch [branch-name]`            //create new branch 
 - `git checkout [branch-name]`          //switch branch
 - `git checkout -b [branch-name]`       // create and switch to the newly created branch
